@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Rainwater Harvesting | Science Exhibition</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,31 +17,48 @@
 
     <!-- Animated Background -->
     <div class="background">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
         <div class="rain"></div>
-        <div class="water-glow"></div>
+        <div class="water-particles"></div>
     </div>
 
-    <!-- ================= INTRO PAGE ================= -->
+    <!-- ================= INTRO ================= -->
+
     <section id="introPage" class="page intro-page">
 
-        <div class="glass intro-box">
+        <div class="intro-content">
 
-            <p class="small-title">SCIENCE EXHIBITION</p>
-
-            <h1>RAINWATER</h1>
-            <h2>HARVESTING</h2>
-
-            <p class="tagline">Save Water • Save Future</p>
-
-            <div class="creator">
-                <span>Created by</span>
-                <strong>RUDRANSH</strong>
+            <div class="eyebrow">
+                <span></span>
+                SCIENCE EXHIBITION
+                <span></span>
             </div>
 
-            <button class="main-button" onclick="showMainPage()">
-                VISIT PAGE
-                <span>→</span>
+            <div class="water-symbol">💧</div>
+
+            <h1>
+                RAINWATER<br>
+                <span>HARVESTING</span>
+            </h1>
+
+            <p class="intro-description">
+                Every drop matters.  
+                Discover how rainwater can become a valuable resource.
+            </p>
+
+            <div class="creator">
+                CREATED BY <strong>RUDRANSH</strong>
+            </div>
+
+            <button class="premium-button" onclick="showMainPage()">
+                <span>VISIT PAGE</span>
+                <span class="arrow">→</span>
             </button>
+
+            <div class="scroll-text">
+                EXPLORE • LEARN • CONSERVE
+            </div>
 
         </div>
 
@@ -43,86 +66,175 @@
 
 
     <!-- ================= MAIN PAGE ================= -->
-    <section id="mainPage" class="page hidden">
 
-        <header class="top-header">
-            <p>SCIENCE EXHIBITION</p>
-            <h1>RAINWATER HARVESTING</h1>
-            <p class="subtitle">Explore how rainwater can be collected, filtered, stored and reused.</p>
+    <section id="mainPage" class="page main-page hidden">
+
+        <header class="top-bar">
+
+            <div class="brand">
+                <div class="brand-icon">💧</div>
+
+                <div>
+                    <small>SCIENCE EXHIBITION</small>
+                    <strong>RAINWATER HARVESTING</strong>
+                </div>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                EXPLORE
+            </div>
+
         </header>
 
-        <main class="topics">
 
-            <div class="topic-card" onclick="openTopic('collection')">
-                <div class="icon">💧</div>
-                <h2>Water Collection</h2>
-                <p>How rainwater is collected from rooftops and surfaces.</p>
-                <span>Explore →</span>
+        <main class="main-content">
+
+            <div class="main-heading">
+
+                <p class="section-label">DISCOVER THE PROCESS</p>
+
+                <h2>
+                    Every Drop Has<br>
+                    <span>A Purpose.</span>
+                </h2>
+
+                <p>
+                    Explore the science, process and importance of
+                    collecting and reusing rainwater.
+                </p>
+
             </div>
 
-            <div class="topic-card" onclick="openTopic('harvesting')">
-                <div class="icon">🌧️</div>
-                <h2>Rainwater Harvesting</h2>
-                <p>Understand the complete rainwater harvesting system.</p>
-                <span>Explore →</span>
+
+            <div class="topic-grid">
+
+                <article class="topic-card" onclick="openTopic('collection')">
+                    <div class="card-number">01</div>
+                    <div class="card-icon">🌧️</div>
+                    <h3>Water Collection</h3>
+                    <p>Capture rainwater from rooftops and surfaces.</p>
+                    <div class="explore">EXPLORE <span>→</span></div>
+                </article>
+
+
+                <article class="topic-card" onclick="openTopic('harvesting')">
+                    <div class="card-number">02</div>
+                    <div class="card-icon">💧</div>
+                    <h3>Rainwater Harvesting</h3>
+                    <p>Understand how rainwater is collected and directed.</p>
+                    <div class="explore">EXPLORE <span>→</span></div>
+                </article>
+
+
+                <article class="topic-card" onclick="openTopic('filtration')">
+                    <div class="card-number">03</div>
+                    <div class="card-icon">🔬</div>
+                    <h3>Filtration</h3>
+                    <p>Learn how impurities are removed from collected water.</p>
+                    <div class="explore">EXPLORE <span>→</span></div>
+                </article>
+
+
+                <article class="topic-card" onclick="openTopic('storage')">
+                    <div class="card-number">04</div>
+                    <div class="card-icon">🛢️</div>
+                    <h3>Water Storage</h3>
+                    <p>Store harvested water safely for future use.</p>
+                    <div class="explore">EXPLORE <span>→</span></div>
+                </article>
+
+
+                <article class="topic-card" onclick="openTopic('reuse')">
+                    <div class="card-number">05</div>
+                    <div class="card-icon">♻️</div>
+                    <h3>Water Reuse</h3>
+                    <p>Discover practical ways to reuse collected water.</p>
+                    <div class="explore">EXPLORE <span>→</span></div>
+                </article>
+
+
+                <article class="topic-card" onclick="openTopic('benefits')">
+                    <div class="card-number">06</div>
+                    <div class="card-icon">🌱</div>
+                    <h3>Benefits</h3>
+                    <p>See how rainwater harvesting helps people and nature.</p>
+                    <div class="explore">EXPLORE <span>→</span></div>
+                </article>
+
+
+                <article class="topic-card featured-card" onclick="openTopic('science')">
+                    <div class="card-number">07</div>
+                    <div class="card-icon">⚡</div>
+                    <h3>Science Behind It</h3>
+                    <p>Understand the scientific principles behind the system.</p>
+                    <div class="explore">EXPLORE <span>→</span></div>
+                </article>
+
             </div>
 
-            <div class="topic-card" onclick="openTopic('filtration')">
-                <div class="icon">🧹</div>
-                <h2>Filtration</h2>
-                <p>Learn how collected rainwater can be filtered.</p>
-                <span>Explore →</span>
-            </div>
 
-            <div class="topic-card" onclick="openTopic('storage')">
-                <div class="icon">🛢️</div>
-                <h2>Water Storage</h2>
-                <p>How clean water can be stored safely for later use.</p>
-                <span>Explore →</span>
-            </div>
-
-            <div class="topic-card" onclick="openTopic('reuse')">
-                <div class="icon">🏠</div>
-                <h2>Water Reuse</h2>
-                <p>Different ways harvested water can be reused.</p>
-                <span>Explore →</span>
-            </div>
-
-            <div class="topic-card" onclick="openTopic('benefits')">
-                <div class="icon">🌱</div>
-                <h2>Benefits</h2>
-                <p>Why rainwater harvesting is important for our future.</p>
-                <span>Explore →</span>
-            </div>
-
-            <div class="topic-card" onclick="openTopic('science')">
-                <div class="icon">🔬</div>
-                <h2>Science Behind It</h2>
-                <p>The scientific principles involved in the system.</p>
-                <span>Explore →</span>
+            <div class="bottom-message">
+                <span></span>
+                SAVE WATER • SAVE THE FUTURE
+                <span></span>
             </div>
 
         </main>
-
-        <footer>
-            <p>Science Exhibition • Created by Rudransh</p>
-        </footer>
 
     </section>
 
 
     <!-- ================= DETAIL PAGE ================= -->
-    <section id="detailPage" class="page hidden">
+
+    <section id="detailPage" class="page detail-page hidden">
 
         <div class="detail-container">
 
-            <button class="back-button" onclick="showMainPage()">
+            <button class="back-button" onclick="backToMain()">
                 ← BACK TO TOPICS
             </button>
 
-            <div id="detailContent" class="glass detail-box">
-                <!-- JavaScript will put content here -->
+            <div class="detail-number" id="detailNumber">
+                01
             </div>
+
+            <div class="detail-icon" id="detailIcon">
+                💧
+            </div>
+
+            <p class="section-label" id="detailLabel">
+                KNOW MORE
+            </p>
+
+            <h2 id="detailTitle">
+                Water Collection
+            </h2>
+
+            <div class="detail-line"></div>
+
+            <p class="detail-intro" id="detailIntro"></p>
+
+            <div class="info-box">
+                <div class="info-title">
+                    KEY INFORMATION
+                </div>
+
+                <div id="detailContent"></div>
+            </div>
+
+            <div class="did-you-know">
+                <span>💡</span>
+                <div>
+                    <strong>Did You Know?</strong>
+                    <p id="didYouKnow"></p>
+                </div>
+            </div>
+
+            <button class="premium-button small-button" onclick="backToMain()">
+                <span>EXPLORE MORE TOPICS</span>
+                <span class="arrow">→</span>
+            </button>
 
         </div>
 
