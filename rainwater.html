@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainwater Harvesting | Science Exhibition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="rain"></div>
+        <div class="water-glow"></div>
+    </div>
+
+    <!-- ================= INTRO PAGE ================= -->
+    <section id="introPage" class="page intro-page">
+
+        <div class="glass intro-box">
+
+            <p class="small-title">SCIENCE EXHIBITION</p>
+
+            <h1>RAINWATER</h1>
+            <h2>HARVESTING</h2>
+
+            <p class="tagline">Save Water • Save Future</p>
+
+            <div class="creator">
+                <span>Created by</span>
+                <strong>RUDRANSH</strong>
+            </div>
+
+            <button class="main-button" onclick="showMainPage()">
+                VISIT PAGE
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN PAGE ================= -->
+    <section id="mainPage" class="page hidden">
+
+        <header class="top-header">
+            <p>SCIENCE EXHIBITION</p>
+            <h1>RAINWATER HARVESTING</h1>
+            <p class="subtitle">Explore how rainwater can be collected, filtered, stored and reused.</p>
+        </header>
+
+        <main class="topics">
+
+            <div class="topic-card" onclick="openTopic('collection')">
+                <div class="icon">💧</div>
+                <h2>Water Collection</h2>
+                <p>How rainwater is collected from rooftops and surfaces.</p>
+                <span>Explore →</span>
+            </div>
+
+            <div class="topic-card" onclick="openTopic('harvesting')">
+                <div class="icon">🌧️</div>
+                <h2>Rainwater Harvesting</h2>
+                <p>Understand the complete rainwater harvesting system.</p>
+                <span>Explore →</span>
+            </div>
+
+            <div class="topic-card" onclick="openTopic('filtration')">
+                <div class="icon">🧹</div>
+                <h2>Filtration</h2>
+                <p>Learn how collected rainwater can be filtered.</p>
+                <span>Explore →</span>
+            </div>
+
+            <div class="topic-card" onclick="openTopic('storage')">
+                <div class="icon">🛢️</div>
+                <h2>Water Storage</h2>
+                <p>How clean water can be stored safely for later use.</p>
+                <span>Explore →</span>
+            </div>
+
+            <div class="topic-card" onclick="openTopic('reuse')">
+                <div class="icon">🏠</div>
+                <h2>Water Reuse</h2>
+                <p>Different ways harvested water can be reused.</p>
+                <span>Explore →</span>
+            </div>
+
+            <div class="topic-card" onclick="openTopic('benefits')">
+                <div class="icon">🌱</div>
+                <h2>Benefits</h2>
+                <p>Why rainwater harvesting is important for our future.</p>
+                <span>Explore →</span>
+            </div>
+
+            <div class="topic-card" onclick="openTopic('science')">
+                <div class="icon">🔬</div>
+                <h2>Science Behind It</h2>
+                <p>The scientific principles involved in the system.</p>
+                <span>Explore →</span>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>Science Exhibition • Created by Rudransh</p>
+        </footer>
+
+    </section>
+
+
+    <!-- ================= DETAIL PAGE ================= -->
+    <section id="detailPage" class="page hidden">
+
+        <div class="detail-container">
+
+            <button class="back-button" onclick="showMainPage()">
+                ← BACK TO TOPICS
+            </button>
+
+            <div id="detailContent" class="glass detail-box">
+                <!-- JavaScript will put content here -->
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
